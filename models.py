@@ -1,12 +1,11 @@
 from django.db import models
 
 # Create your models here.
-class employee(models.Model):
-    empoyee_no=models.IntegerField()
-    employee_name=models.CharField(max_length=20)
-    employee_salary=models.IntegerField()
-    employee_adress=models.CharField(max_length=200)
-  #model name employeee (here it is model)
-  # class employee which is sub class of models.Model
+class student(models.Model):
+    student_name=models.CharField(max_length=20)
+    student_fees=models.IntegerField()
+    student_mark=models.IntegerField()
+  #model name student (here it is model)
+  # class student which is sub class of models.Model
   # attributes are fields here(which is as column in database)
   
