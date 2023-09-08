@@ -1,5 +1,6 @@
 from django.contrib import admin
-from dbapp.models import employee     -----# importing class(model) from models.py file
-
+from app1.models import student
 # Register your models here.
-admin.site.register(employee)    ----#registering our models in admin.py file
+class StudentAdmin(admin.ModelAdmin):
+    list_display=["student_name",'student_fees','student_mark']
+admin.site.register(student,StudentAdmin)
