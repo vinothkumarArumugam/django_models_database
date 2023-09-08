@@ -1,0 +1,17 @@
+<html>
+{% load static %}
+<head>
+<title>student</title>
+</head>
+<body>
+  {% if student_details %}
+     {% for st in student_details %}
+
+        <h1>{{st.student_name}}</h1>
+        <h1>{{st.student_fees}}</h1>
+        <h1>{{st.student_mark}}</h1>
+
+     {% endfor %}
+  {% endif %}
+</body>
+</html>
